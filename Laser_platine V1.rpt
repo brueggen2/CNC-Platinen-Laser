@@ -1,0 +1,1520 @@
+Report       : Laser_platine V1
+Date         : 03-04-2015
+Time         : 10:54:53
+
+Compiler     : BASCOM-AVR LIBRARY V 2.0.7.8
+Processor    : XM128A3
+SRAM         : 2000 hex
+EEPROM       : 800 hex
+ROMSIZE      : 22000 hex
+
+ROMIMAGE     : EB32 hex  -> Will fit into ROM
+ROMIMAGE     :  60210 dec
+FLASH USED   :  43  %
+UART1        :   0.01 % ERROR
+UART5        :   0.01 % ERROR
+XTAL         : 32000000 Hz
+
+Stack start  : 3FFF hex
+Stack size   : 80 hex
+S-Stacksize  : 80 hex
+S-Stackstart : 3F80 hex
+Framesize    : 80 hex
+Framestart   : 3E80 hex
+Space left   :  4493  dec
+
+LCD DB7      : PORTB.7
+LCD DB6      : PORTB.6
+LCD DB5      : PORTB.5
+LCD DB4      : PORTB.4
+LCD E        : PORTB.3
+LCD RS       : PORTB.2
+LCD mode     :  4  bit
+
+--------------------------------------------------------------------------------
+Variable                         Type            Address(hex)   Address(dec)
+--------------------------------------------------------------------------------
+DACA0                            Word              0318          792 
+DACA1                            Word              031A          794 
+DACB0                            Word              0338          824 
+DACB1                            Word              033A          826 
+ADCA_CALIB                       Word              020C          524 
+ADCA_CH0RES                      Word              0210          528 
+ADCA_CH1RES                      Word              0212          530 
+ADCA_CH2RES                      Word              0214          532 
+ADCA_CH3RES                      Word              0216          534 
+ADCA_CMP                         Word              0218          536 
+ADCA_CH0_RES                     Word              0224          548 
+ADCA_CH1_RES                     Word              022C          556 
+ADCA_CH2_RES                     Word              0234          564 
+ADCA_CH3_RES                     Word              023C          572 
+ADCB_CALIB                       Word              024C          588 
+ADCB_CH0RES                      Word              0250          592 
+ADCB_CH1RES                      Word              0252          594 
+ADCB_CH2RES                      Word              0254          596 
+ADCB_CH3RES                      Word              0256          598 
+ADCB_CMP                         Word              0258          600 
+ADCB_CH0_RES                     Word              0264          612 
+ADCB_CH1_RES                     Word              026C          620 
+ADCB_CH2_RES                     Word              0274          628 
+ADCB_CH3_RES                     Word              027C          636 
+TCC0_CNT                         Word              0820          2080 
+TCC0_PER                         Word              0826          2086 
+TCC0_CCA                         Word              0828          2088 
+TCC0_CCB                         Word              082A          2090 
+TCC0_CCC                         Word              082C          2092 
+TCC0_CCD                         Word              082E          2094 
+TCC0_PERBUF                      Word              0836          2102 
+TCC0_CCABUF                      Word              0838          2104 
+TCC0_CCBBUF                      Word              083A          2106 
+TCC0_CCCBUF                      Word              083C          2108 
+TCC0_CCDBUF                      Word              083E          2110 
+TCC1_CNT                         Word              0860          2144 
+TCC1_PER                         Word              0866          2150 
+TCC1_CCA                         Word              0868          2152 
+TCC1_CCB                         Word              086A          2154 
+TCC1_PERBUF                      Word              0876          2166 
+TCC1_CCABUF                      Word              0878          2168 
+TCC1_CCBBUF                      Word              087A          2170 
+TCD0_CNT                         Word              0920          2336 
+TCD0_PER                         Word              0926          2342 
+TCD0_CCA                         Word              0928          2344 
+TCD0_CCB                         Word              092A          2346 
+TCD0_CCC                         Word              092C          2348 
+TCD0_CCD                         Word              092E          2350 
+TCD0_PERBUF                      Word              0936          2358 
+TCD0_CCABUF                      Word              0938          2360 
+TCD0_CCBBUF                      Word              093A          2362 
+TCD0_CCCBUF                      Word              093C          2364 
+TCD0_CCDBUF                      Word              093E          2366 
+TCD1_CNT                         Word              0960          2400 
+TCD1_PER                         Word              0966          2406 
+TCD1_CCA                         Word              0968          2408 
+TCD1_CCB                         Word              096A          2410 
+TCD1_PERBUF                      Word              0976          2422 
+TCD1_CCABUF                      Word              0978          2424 
+TCD1_CCBBUF                      Word              097A          2426 
+TCE0_CNT                         Word              0A20          2592 
+TCE0_PER                         Word              0A26          2598 
+TCE0_CCA                         Word              0A28          2600 
+TCE0_CCB                         Word              0A2A          2602 
+TCE0_CCC                         Word              0A2C          2604 
+TCE0_CCD                         Word              0A2E          2606 
+TCE0_PERBUF                      Word              0A36          2614 
+TCE0_CCABUF                      Word              0A38          2616 
+TCE0_CCBBUF                      Word              0A3A          2618 
+TCE0_CCCBUF                      Word              0A3C          2620 
+TCE0_CCDBUF                      Word              0A3E          2622 
+TCE1_CNT                         Word              0A60          2656 
+TCE1_PER                         Word              0A66          2662 
+TCE1_CCA                         Word              0A68          2664 
+TCE1_CCB                         Word              0A6A          2666 
+TCE1_PERBUF                      Word              0A76          2678 
+TCE1_CCABUF                      Word              0A78          2680 
+TCE1_CCBBUF                      Word              0A7A          2682 
+TCF0_CNT                         Word              0B20          2848 
+TCF0_PER                         Word              0B26          2854 
+TCF0_CCA                         Word              0B28          2856 
+TCF0_CCB                         Word              0B2A          2858 
+TCF0_CCC                         Word              0B2C          2860 
+TCF0_CCD                         Word              0B2E          2862 
+TCF0_PERBUF                      Word              0B36          2870 
+TCF0_CCABUF                      Word              0B38          2872 
+TCF0_CCBBUF                      Word              0B3A          2874 
+TCF0_CCCBUF                      Word              0B3C          2876 
+TCF0_CCDBUF                      Word              0B3E          2878 
+TCF1_CNT                         Word              0B60          2912 
+TCF1_PER                         Word              0B66          2918 
+TCF1_CCA                         Word              0B68          2920 
+TCF1_CCB                         Word              0B6A          2922 
+TCF1_PERBUF                      Word              0B76          2934 
+TCF1_CCABUF                      Word              0B78          2936 
+TCF1_CCBBUF                      Word              0B7A          2938 
+SP                               Word              003D          61 
+RTC_CNT                          Word              0408          1032 
+RTC_PER                          Word              040A          1034 
+RTC_COMP                         Word              040C          1036 
+EBI_REFRESH                      Word              0444          1092 
+EBI_INITDLY                      Word              0446          1094 
+EBI_CS0_BASEADDR                 Word              0452          1106 
+EBI_CS1_BASEADDR                 Word              0456          1110 
+EBI_CS2_BASEADDR                 Word              045A          1114 
+EBI_CS3_BASEADDR                 Word              045E          1118 
+DMA_CH0_TRFCNT                   Word              0114          276 
+DMA_CH1_TRFCNT                   Word              0124          292 
+DMA_CH2_TRFCNT                   Word              0134          308 
+DMA_CH3_TRFCNT                   Word              0144          324 
+DMA_CH0_SRCADDR                  Triplet           0118          280 
+DMA_CH0_DESTADDR                 Triplet           011C          284 
+DMA_CH1_SRCADDR                  Triplet           0128          296 
+DMA_CH1_DESTADDR                 Triplet           012C          300 
+DMA_CH2_SRCADDR                  Triplet           0138          312 
+DMA_CH2_DESTADDR                 Triplet           013C          316 
+DMA_CH3_SRCADDR                  Triplet           0148          328 
+DMA_CH3_DESTADDR                 Triplet           014C          332 
+HWSTACK                          Word              003D          61 
+SWSTACK                          Word              001C          28 
+FRAME                            Word              0004          4 
+R0                                                 0000          0 
+R1                                                 0001          1 
+R2                                                 0002          2 
+R3                                                 0003          3 
+R4                                                 0004          4 
+R5                                                 0005          5 
+R6                                                 0006          6 
+R7                                                 0007          7 
+R8                                                 0008          8 
+R9                                                 0009          9 
+R10                                                000A          10 
+R11                                                000B          11 
+R12                                                000C          12 
+R13                                                000D          13 
+R14                                                000E          14 
+R15                                                000F          15 
+R16                                                0010          16 
+R17                                                0011          17 
+R18                                                0012          18 
+R19                                                0013          19 
+R20                                                0014          20 
+R21                                                0015          21 
+R22                                                0016          22 
+R23                                                0017          23 
+R24                                                0018          24 
+R25                                                0019          25 
+R26                                                001A          26 
+R27                                                001B          27 
+R28                                                001C          28 
+R29                                                001D          29 
+R30                                                001E          30 
+R31                                                001F          31 
+ERR                              Bit [2]           0006          6 
+LASERMODUL_BUFF                  String * 9        2029          8233 
+BTEMP1                           Byte              2033          8243 
+FILE_HANDLE                      Byte              2034          8244 
+FILE_NAMES                       String * 15       2035          8245 
+DATEINAME                        String(30) * 15   2045          8261 
+GEFUNDENE_DATEIEN                Byte              2225          8741 
+NC_PROGRAMM                      String * 15       2226          8742 
+STEP_COUNT_X                     Long              2236          8758 
+STEP_COUNT_Y                     Long              223A          8762 
+POSITION_X                       Long              223E          8766 
+POSITION_Y                       Long              2242          8770 
+MASCH_POS_X_MM                   Single            2246          8774 
+MASCH_POS_Y_MM                   Single            224A          8778 
+MASCH_POS_X_STEP                 Long              224E          8782 
+MASCH_POS_Y_STEP                 Long              2252          8786 
+LONG_WAY                         Byte              2256          8790 
+NEW_POS_X_STEP                   Long              2257          8791 
+NEW_POS_Y_STEP                   Long              225B          8795 
+X_PROG_POS                       Long              225F          8799 
+Y_PROG_POS                       Long              2263          8803 
+2TE_ACHSE_STEPS                  Word              2267          8807 
+2TE_ACHSE_SINGLE                 Single            2269          8809 
+2TE_ACHSE_SCALE                  Single            226D          8813 
+LANGE_ACHSE                      Long              2271          8817 
+COMPARE_2TE_ACHSE                Long              2275          8821 
+SINGLE_Q                         Single            2279          8825 
+ERR1                             Bit [7]           227D          8829 
+ERR_CODE1                        Long              227E          8830 
+STEP_ON                          Bit [6]           227D          8829 
+X_LONG                           Long              2282          8834 
+Y_LONG                           Long              2286          8838 
+X_SINGLE                         Single            228A          8842 
+Y_SINGLE                         Single            228E          8846 
+Z_SINGLE                         Single            2292          8850 
+LASER_NEXT                       Byte              2296          8854 
+HEADER_PEN                       String * 4        2297          8855 
+MIN_X_PRG                        Long              229C          8860 
+MAX_X_PRG                        Long              22A0          8864 
+MIN_Y_PRG                        Long              22A4          8868 
+MAX_Y_PRG                        Long              22A8          8872 
+IGNORIERE_NULL_PA                Bit [5]           227D          8829 
+FAHRWEG_GESAMT                   Long              22AC          8876 
+SIM_ACHSE_X                      Long              22B0          8880 
+SIM_ACHSE_Y                      Long              22B4          8884 
+BOHREN_AKTIV                     Bit [4]           227D          8829 
+FORTSCHRITT                      Byte              22B8          8888 
+EIN_PROZENT                      Single            22B9          8889 
+RECHNEN_PROZENT                  Single            22BD          8893 
+AUS_PROGRAMM_GESTARTET           Bit [3]           227D          8829 
+SIMULATION                       Bit [2]           227D          8829 
+LASER_WEG_MM                     Long              22C1          8897 
+BYTINCR                          Byte              22C5          8901 
+BYTENC_OLD                       Byte              22C6          8902 
+BYTENC_NEW                       Byte              22C7          8903 
+BITKEY_ENC                       Bit [1]           227D          8829 
+LAST                             Bit [0]           227D          8829 
+POINTER                          Byte              22C8          8904 
+TASTER                           Bit [7]           22C9          8905 
+ENCODE                           Word              22CA          8906 
+ENCODE_ENDLOS                    Bit [6]           22C9          8905 
+TAST_STATE                       Bit [5]           22C9          8905 
+TAST_LAST                        Bit [4]           22C9          8905 
+HELP_STR                         String * 50       22CC          8908 
+HELP_STR2                        String * 50       22FF          8959 
+TIME_STR                         String * 50       2332          9010 
+L                                Long              2365          9061 
+B                                Byte              2369          9065 
+SPLITT                           String(8) * 50    236A          9066 
+HEADER                           String * 5        2502          9474 
+AKT_LINE                         Word              2508          9480 
+PRG_ZEILEN                       Long              250A          9482 
+SD_SIZE_MB                       Word              250E          9486 
+SD_FREE_MB                       Word              2510          9488 
+MINUTEN                          Byte              2512          9490 
+STUNDEN                          Byte              2513          9491 
+SEKUNDEN                         Byte              2514          9492 
+M_MINUTEN                        Byte              2515          9493 
+M_STUNDEN                        Byte              2516          9494 
+M_SEKUNDEN                       Byte              2517          9495 
+FREE_SINGLE                      Single            2518          9496 
+REC_C0                           Byte              251C          9500 
+ABBRUCH                          Bit [3]           22C9          8905 
+LASER_OUT                        Byte              251D          9501 
+Z_REFERENZ                       Bit [2]           22C9          8905 
+Z_SD_KARTE                       Bit [1]           22C9          8905 
+STEPS_MM_X                       Word              251E          9502 
+STEPS_MM_Y                       Word              2520          9504 
+STEPS_PLT_X                      Word              2522          9506 
+STEPS_PLT_Y                      Word              2524          9508 
+IGNORIERE_NULLFAHRT              Byte              2526          9510 
+MOTOR_DISABLE_PRG_ENDE           Bit [0]           22C9          8905 
+MAN_STEPS_PER_TIC_X              Word              2527          9511 
+MAN_STEPS_PER_TIC_Y              Word              2529          9513 
+PARA_DAT                         Word              252B          9515 
+RICHTUNG_REF_FAHRT_X             Bit [7]           252D          9517 
+RICHTUNG_REF_FAHRT_Y             Bit [6]           252D          9517 
+SPEED_REF_FAHRT_X                Word              252E          9518 
+SPEED_REF_FAHRT_Y                Word              2530          9520 
+SPEED_REF_FREI_FAHRT_X           Word              2532          9522 
+SPEED_REF_FREI_FAHRT_Y           Word              2534          9524 
+WEG_REF_FREI_FAHRT_Y             Word              2536          9526 
+WEG_REF_FREI_FAHRT_X             Word              2538          9528 
+TIMER_ARBEITS_SPEED              Word              253A          9530 
+ENDSCHALTER_X_INVERTIERT         Bit [5]           252D          9517 
+ENDSCHALTER_Y_INVERTIERT         Bit [4]           252D          9517 
+LASERBRENNZEIT                   Word              253C          9532 
+MM_PRO_MINUTE                    Word              253E          9534 
+EINRICHT_WZ_AKTIV                Bit [3]           252D          9517 
+EINRICHT_WZ_VERSATZ_X            Integer           2540          9536 
+EINRICHT_WZ_VERSATZ_Y            Integer           2542          9538 
+LASER_MODUL_VERBAUT              Bit [2]           252D          9517 
+TEIL_EINNULLEN                   Bit [1]           252D          9517 
+SIM_MIT_EINRICHT_WZ              Bit [0]           252D          9517 
+CHK_READ                         Byte              2544          9540 
+BELADEPOS_X                      Integer           2545          9541 
+BELADEPOS_Y                      Integer           2547          9543 
+LASER_START_ZEIT                 Word              2549          9545 
+LASER_STOP_ZEIT                  Word              254B          9547 
+GEFERTIGTE_PLATINEN              Word              254D          9549 
+E_GEFERTIGTE_PLATINEN            EEPROM Word       0000          0 
+RGB_DATA                         Byte(260)         254F          9551 
+COLOR_ARRAY                      Word(12)          2653          9811 
+MENU                             Byte              266B          9835 
+INITIALISIERT                    Bit [7]           266C          9836 
+SEL_FARBE                        Word              266D          9837 
+R                                Byte              266F          9839 
+P                                Byte              2670          9840 
+S                                Byte              2671          9841 
+X_MENU                           Word              2672          9842 
+MANUELL_DRIVING                  Bit [6]           266C          9836 
+AXIS_SELECT_Y                    Bit [5]           266C          9836 
+MMCSD_CARDTYPE                   Byte              2674          9844 
+GBDRIVEERROR                     Byte              2675          9845 
+GBDRIVESTATUSREG                 Byte              2676          9846 
+GBDRIVEDEBUG                     Byte              2677          9847 
+GLDRIVESECTORS                   Long              2678          9848 
+GBDOSERROR                       Byte              267C          9852 
+GBFILESYSTEM                     Byte              267D          9853 
+GBFILESYSTEMSTATUS               Byte              267E          9854 
+GLFATFIRSTSECTOR                 Long              267F          9855 
+GBNUMBEROFFATS                   Byte              2683          9859 
+GLSECTORSPERFAT                  Long              2684          9860 
+GLROOTFIRSTSECTOR                Long              2688          9864 
+GWROOTENTRIES                    Word              268C          9868 
+GLDATAFIRSTSECTOR                Long              268E          9870 
+GBSECTORSPERCLUSTER              Byte              2692          9874 
+GLMAXCLUSTERNUMBER               Long              2693          9875 
+GLLASTSEARCHEDCLUSTER            Long              2697          9879 
+GLFS_TEMP1                       Long              269B          9883 
+GLDIRFIRSTSECTORNUMBER           Long              269F          9887 
+GWFREEDIRENTRY                   Word              26A3          9891 
+GLFREEDIRSECTORNUMBER            Long              26A5          9893 
+GSDIR0TEMPFILENAME               String * 11       26A9          9897 
+GWDIR0ENTRY                      Word              26B5          9909 
+GLDIR0SECTORNUMBER               Long              26B7          9911 
+GSTEMPFILENAME                   String * 11       26BB          9915 
+GWDIRENTRY                       Word              26C7          9927 
+GLDIRSECTORNUMBER                Long              26C9          9929 
+GBDIRBUFFERSTATUS                Byte              26CD          9933 
+GBDIRBUFFER                      Byte(512)         26CE          9934 
+GLFATSECTORNUMBER                Long              28CE          10446 
+GBFATBUFFERSTATUS                Byte              28D2          10450 
+GBFATBUFFER                      Byte(512)         28D3          10451 
+ABFILEHANDLES                    Byte(538)         2AD3          10963 
+LASTDOSMEM                       Byte              2CED          11501 
+
+--------------------------------------------------------------------------------
+Constant                         Value
+--------------------------------------------------------------------------------
+SREG                             &H3F
+SPH                              &H3E
+SPL                              &H3D
+EIND                             &H3C
+RAMPZ                            &H3B
+RAMPY                            &H3A
+RAMPX                            &H39
+RAMPD                            &H38
+CPU_CCP                          &H34
+OCD_OCDR1                        47
+OCD_OCDR0                        46
+GPIO_GPIOF                       15
+GPIO_GPIOE                       14
+GPIO_GPIOD                       13
+GPIO_GPIOC                       12
+GPIO_GPIOB                       11
+GPIO_GPIOA                       10
+GPIO_GPIO9                       9
+GPIO_GPIO8                       8
+GPIO_GPIO7                       7
+GPIO_GPIO6                       6
+GPIO_GPIO5                       5
+GPIO_GPIO4                       4
+GPIO_GPIO3                       3
+GPIO_GPIO2                       2
+GPIO_GPIO1                       1
+GPIO_GPIO0                       0
+CLK_CTRL                         64
+CLK_PSCTRL                       65
+CLK_LOCK                         66
+CLK_RTCCTRL                      67
+SLEEP_CTRL                       72
+OSC_CTRL                         80
+OSC_STATUS                       81
+OSC_XOSCCTRL                     82
+OSC_XOSCFAIL                     83
+OSC_RC32KCAL                     84
+OSC_PLLCTRL                      85
+OSC_DFLLCTRL                     86
+DFLLRC32M_CTRL                   96
+DFLLRC32M_CALA                   98
+DFLLRC32M_CALB                   99
+DFLLRC32M_OSCCNT0                100
+DFLLRC32M_OSCCNT1                101
+DFLLRC32M_OSCCNT2                102
+DFLLRC2M_CTRL                    104
+DFLLRC2M_CALA                    106
+DFLLRC2M_CALB                    107
+DFLLRC2M_OSCCNT0                 108
+DFLLRC2M_OSCCNT1                 109
+DFLLRC2M_OSCCNT2                 110
+PR_PR                            112
+PR_PRPA                          113
+PR_PRPB                          114
+PR_PRPC                          115
+PR_PRPD                          116
+PR_PRPE                          117
+PR_PRPF                          118
+RST_STATUS                       120
+RST_CTRL                         121
+WDT_CTRL                         128
+WDT_WINCTRL                      129
+WDT_STATUS                       130
+MCU_DEVID0                       144
+MCU_DEVID1                       145
+MCU_DEVID2                       146
+MCU_REVID                        147
+MCU_JTAGUID                      148
+MCU_MCUCR                        150
+MCU_EVSYSLOCK                    152
+MCU_AWEXLOCK                     153
+PMIC_STATUS                      160
+PMIC_INTPRI                      161
+PMIC_CTRL                        162
+DMA_CTRL                         256
+DMA_INTFLAGS                     259
+DMA_STATUS                       260
+DMA_TEMP                         262
+DMA_CH0_CTRLA                    272
+DMA_CH0_CTRLB                    273
+DMA_CH0_ADDRCTRL                 274
+DMA_CH0_TRIGSRC                  275
+DMA_CH0_REPCNT                   278
+DMA_CH0_SRCADDR0                 280
+DMA_CH0_SRCADDR1                 281
+DMA_CH0_SRCADDR2                 282
+DMA_CH0_DESTADDR0                284
+DMA_CH0_DESTADDR1                285
+DMA_CH0_DESTADDR2                286
+DMA_CH1_CTRLA                    288
+DMA_CH1_CTRLB                    289
+DMA_CH1_ADDRCTRL                 290
+DMA_CH1_TRIGSRC                  291
+DMA_CH1_REPCNT                   294
+DMA_CH1_SRCADDR0                 296
+DMA_CH1_SRCADDR1                 297
+DMA_CH1_SRCADDR2                 298
+DMA_CH1_DESTADDR0                300
+DMA_CH1_DESTADDR1                301
+DMA_CH1_DESTADDR2                302
+DMA_CH2_CTRLA                    304
+DMA_CH2_CTRLB                    305
+DMA_CH2_ADDRCTRL                 306
+DMA_CH2_TRIGSRC                  307
+DMA_CH2_REPCNT                   310
+DMA_CH2_SRCADDR0                 312
+DMA_CH2_SRCADDR1                 313
+DMA_CH2_SRCADDR2                 314
+DMA_CH2_DESTADDR0                316
+DMA_CH2_DESTADDR1                317
+DMA_CH2_DESTADDR2                318
+DMA_CH3_CTRLA                    320
+DMA_CH3_CTRLB                    321
+DMA_CH3_ADDRCTRL                 322
+DMA_CH3_TRIGSRC                  323
+DMA_CH3_REPCNT                   326
+DMA_CH3_SRCADDR0                 328
+DMA_CH3_SRCADDR1                 329
+DMA_CH3_SRCADDR2                 330
+DMA_CH3_DESTADDR0                332
+DMA_CH3_DESTADDR1                333
+DMA_CH3_DESTADDR2                334
+EVSYS_CH0MUX                     384
+EVSYS_CH1MUX                     385
+EVSYS_CH2MUX                     386
+EVSYS_CH3MUX                     387
+EVSYS_CH4MUX                     388
+EVSYS_CH5MUX                     389
+EVSYS_CH6MUX                     390
+EVSYS_CH7MUX                     391
+EVSYS_CH0CTRL                    392
+EVSYS_CH1CTRL                    393
+EVSYS_CH2CTRL                    394
+EVSYS_CH3CTRL                    395
+EVSYS_CH4CTRL                    396
+EVSYS_CH5CTRL                    397
+EVSYS_CH6CTRL                    398
+EVSYS_CH7CTRL                    399
+EVSYS_STROBE                     400
+EVSYS_DATA                       401
+NVM_ADDR0                        448
+NVM_ADDR1                        449
+NVM_ADDR2                        450
+NVM_DATA0                        452
+NVM_DATA1                        453
+NVM_DATA2                        454
+NVM_CMD                          458
+NVM_CTRLA                        459
+NVM_CTRLB                        460
+NVM_INTCTRL                      461
+NVM_STATUS                       463
+NVM_LOCKBITS                     464
+ACA_AC0CTRL                      896
+ACA_AC1CTRL                      897
+ACA_AC0MUXCTRL                   898
+ACA_AC1MUXCTRL                   899
+ACA_CTRLA                        900
+ACA_CTRLB                        901
+ACA_WINCTRL                      902
+ACA_STATUS                       903
+ACB_AC0CTRL                      912
+ACB_AC1CTRL                      913
+ACB_AC0MUXCTRL                   914
+ACB_AC1MUXCTRL                   915
+ACB_CTRLA                        916
+ACB_CTRLB                        917
+ACB_WINCTRL                      918
+ACB_STATUS                       919
+ADCA_CTRLA                       512
+ADCA_CTRLB                       513
+ADCA_REFCTRL                     514
+ADCA_EVCTRL                      515
+ADCA_PRESCALER                   516
+ADCA_CALCTRL                     517
+ADCA_INTFLAGS                    518
+ADCA_TEMP                        519
+ADCA_CALL                        524
+ADCA_CALH                        525
+ADCA_CH0RESL                     528
+ADCA_CH0RESH                     529
+ADCA_CH1RESL                     530
+ADCA_CH1RESH                     531
+ADCA_CH2RESL                     532
+ADCA_CH2RESH                     533
+ADCA_CH3RESL                     534
+ADCA_CH3RESH                     535
+ADCA_CMPL                        536
+ADCA_CMPH                        537
+ADCA_CH0_CTRL                    544
+ADCA_CH0_MUXCTRL                 545
+ADCA_CH0_INTCTRL                 546
+ADCA_CH0_INTFLAGS                547
+ADCA_CH0_RESL                    548
+ADCA_CH0_RESH                    549
+ADCA_CH1_CTRL                    552
+ADCA_CH1_MUXCTRL                 553
+ADCA_CH1_INTCTRL                 554
+ADCA_CH1_INTFLAGS                555
+ADCA_CH1_RESL                    556
+ADCA_CH1_RESH                    557
+ADCA_CH2_CTRL                    560
+ADCA_CH2_MUXCTRL                 561
+ADCA_CH2_INTCTRL                 562
+ADCA_CH2_INTFLAGS                563
+ADCA_CH2_RESL                    564
+ADCA_CH2_RESH                    565
+ADCA_CH3_CTRL                    568
+ADCA_CH3_MUXCTRL                 569
+ADCA_CH3_INTCTRL                 570
+ADCA_CH3_INTFLAGS                571
+ADCA_CH3_RESL                    572
+ADCA_CH3_RESH                    573
+ADCB_CTRLA                       576
+ADCB_CTRLB                       577
+ADCB_REFCTRL                     578
+ADCB_EVCTRL                      579
+ADCB_PRESCALER                   580
+ADCB_CALCTRL                     581
+ADCB_INTFLAGS                    582
+ADCB_TEMP                        583
+ADCB_CALL                        588
+ADCB_CALH                        589
+ADCB_CH0RESL                     592
+ADCB_CH0RESH                     593
+ADCB_CH1RESL                     594
+ADCB_CH1RESH                     595
+ADCB_CH2RESL                     596
+ADCB_CH2RESH                     597
+ADCB_CH3RESL                     598
+ADCB_CH3RESH                     599
+ADCB_CMPL                        600
+ADCB_CMPH                        601
+ADCB_CH0_CTRL                    608
+ADCB_CH0_MUXCTRL                 609
+ADCB_CH0_INTCTRL                 610
+ADCB_CH0_INTFLAGS                611
+ADCB_CH0_RESL                    612
+ADCB_CH0_RESH                    613
+ADCB_CH1_CTRL                    616
+ADCB_CH1_MUXCTRL                 617
+ADCB_CH1_INTCTRL                 618
+ADCB_CH1_INTFLAGS                619
+ADCB_CH1_RESL                    620
+ADCB_CH1_RESH                    621
+ADCB_CH2_CTRL                    624
+ADCB_CH2_MUXCTRL                 625
+ADCB_CH2_INTCTRL                 626
+ADCB_CH2_INTFLAGS                627
+ADCB_CH2_RESL                    628
+ADCB_CH2_RESH                    629
+ADCB_CH3_CTRL                    632
+ADCB_CH3_MUXCTRL                 633
+ADCB_CH3_INTCTRL                 634
+ADCB_CH3_INTFLAGS                635
+ADCB_CH3_RESL                    636
+ADCB_CH3_RESH                    637
+DACB_CTRLA                       800
+DACB_CTRLB                       801
+DACB_CTRLC                       802
+DACB_EVCTRL                      803
+DACB_TIMCTRL                     804
+DACB_STATUS                      805
+DACB_GAINCAL                     808
+DACB_OFFSETCAL                   809
+DACB_CH0DATA                     824
+DACB_CH1DATA                     826
+RTC_CTRL                         1024
+RTC_STATUS                       1025
+RTC_INTCTRL                      1026
+RTC_INTFLAGS                     1027
+RTC_TEMP                         1028
+TWIC_CTRL                        1152
+TWIC_MASTER_CTRLA                1153
+TWIC_MASTER_CTRLB                1154
+TWIC_MASTER_CTRLC                1155
+TWIC_MASTER_STATUS               1156
+TWIC_MASTER_BAUD                 1157
+TWIC_MASTER_ADDR                 1158
+TWIC_MASTER_DATA                 1159
+TWIC_SLAVE_CTRLA                 1160
+TWIC_SLAVE_CTRLB                 1161
+TWIC_SLAVE_STATUS                1162
+TWIC_SLAVE_ADDR                  1163
+TWIC_SLAVE_DATA                  1164
+TWIE_CTRL                        1184
+TWIE_MASTER_CTRLA                1185
+TWIE_MASTER_CTRLB                1186
+TWIE_MASTER_CTRLC                1187
+TWIE_MASTER_STATUS               1188
+TWIE_MASTER_BAUD                 1189
+TWIE_MASTER_ADDR                 1190
+TWIE_MASTER_DATA                 1191
+TWIE_SLAVE_CTRLA                 1192
+TWIE_SLAVE_CTRLB                 1193
+TWIE_SLAVE_STATUS                1194
+TWIE_SLAVE_ADDR                  1195
+TWIE_SLAVE_DATA                  1196
+PORTCFG_MPCMASK                  176
+PORTCFG_VPCTRLA                  178
+PORTCFG_VPCTRLB                  179
+PORTCFG_CLKEVOUT                 180
+VPORT0_DIR                       16
+VPORT0_OUT                       17
+VPORT0_IN                        18
+VPORT0_INTFLAGS                  19
+VPORT1_DIR                       20
+VPORT1_OUT                       21
+VPORT1_IN                        22
+VPORT1_INTFLAGS                  23
+VPORT2_DIR                       24
+VPORT2_OUT                       25
+VPORT2_IN                        26
+VPORT2_INTFLAGS                  27
+VPORT3_DIR                       28
+VPORT3_OUT                       29
+VPORT3_IN                        30
+VPORT3_INTFLAGS                  31
+DDR0                             16
+PORT0                            17
+PIN0                             18
+DDR1                             20
+PORT1                            21
+PIN1                             22
+DDR2                             24
+PORT2                            25
+PIN2                             26
+DDR3                             28
+PORT3                            29
+PIN3                             30
+DDRA                             1536
+PORTA                            1540
+PINA                             1544
+PORTA_DIR                        1536
+PORTA_DIRSET                     1537
+PORTA_DIRCLR                     1538
+PORTA_DIRTGL                     1539
+PORTA_OUT                        1540
+PORTA_OUTSET                     1541
+PORTA_OUTCLR                     1542
+PORTA_OUTTGL                     1543
+PORTA_IN                         1544
+PORTA_INTCTRL                    1545
+PORTA_INT0MASK                   1546
+PORTA_INT1MASK                   1547
+PORTA_INTFLAGS                   1548
+PORTA_PIN0CTRL                   1552
+PORTA_PIN1CTRL                   1553
+PORTA_PIN2CTRL                   1554
+PORTA_PIN3CTRL                   1555
+PORTA_PIN4CTRL                   1556
+PORTA_PIN5CTRL                   1557
+PORTA_PIN6CTRL                   1558
+PORTA_PIN7CTRL                   1559
+DDRB                             1568
+PORTB                            1572
+PINB                             1576
+PORTB_DIR                        1568
+PORTB_DIRSET                     1569
+PORTB_DIRCLR                     1570
+PORTB_DIRTGL                     1571
+PORTB_OUT                        1572
+PORTB_OUTSET                     1573
+PORTB_OUTCLR                     1574
+PORTB_OUTTGL                     1575
+PORTB_IN                         1576
+PORTB_INTCTRL                    1577
+PORTB_INT0MASK                   1578
+PORTB_INT1MASK                   1579
+PORTB_INTFLAGS                   1580
+PORTB_PIN0CTRL                   1584
+PORTB_PIN1CTRL                   1585
+PORTB_PIN2CTRL                   1586
+PORTB_PIN3CTRL                   1587
+PORTB_PIN4CTRL                   1588
+PORTB_PIN5CTRL                   1589
+PORTB_PIN6CTRL                   1590
+PORTB_PIN7CTRL                   1591
+DDRC                             1600
+PORTC                            1604
+PINC                             1608
+PORTC_DIR                        1600
+PORTC_DIRSET                     1601
+PORTC_DIRCLR                     1602
+PORTC_DIRTGL                     1603
+PORTC_OUT                        1604
+PORTC_OUTSET                     1605
+PORTC_OUTCLR                     1606
+PORTC_OUTTGL                     1607
+PORTC_IN                         1608
+PORTC_INTCTRL                    1609
+PORTC_INT0MASK                   1610
+PORTC_INT1MASK                   1611
+PORTC_INTFLAGS                   1612
+PORTC_PIN0CTRL                   1616
+PORTC_PIN1CTRL                   1617
+PORTC_PIN2CTRL                   1618
+PORTC_PIN3CTRL                   1619
+PORTC_PIN4CTRL                   1620
+PORTC_PIN5CTRL                   1621
+PORTC_PIN6CTRL                   1622
+PORTC_PIN7CTRL                   1623
+DDRD                             1632
+PORTD                            1636
+PIND                             1640
+PORTD_DIR                        1632
+PORTD_DIRSET                     1633
+PORTD_DIRCLR                     1634
+PORTD_DIRTGL                     1635
+PORTD_OUT                        1636
+PORTD_OUTSET                     1637
+PORTD_OUTCLR                     1638
+PORTD_OUTTGL                     1639
+PORTD_IN                         1640
+PORTD_INTCTRL                    1641
+PORTD_INT0MASK                   1642
+PORTD_INT1MASK                   1643
+PORTD_INTFLAGS                   1644
+PORTD_PIN0CTRL                   1648
+PORTD_PIN1CTRL                   1649
+PORTD_PIN2CTRL                   1650
+PORTD_PIN3CTRL                   1651
+PORTD_PIN4CTRL                   1652
+PORTD_PIN5CTRL                   1653
+PORTD_PIN6CTRL                   1654
+PORTD_PIN7CTRL                   1655
+DDRE                             1664
+PORTE                            1668
+PINE                             1672
+PORTE_DIR                        1664
+PORTE_DIRSET                     1665
+PORTE_DIRCLR                     1666
+PORTE_DIRTGL                     1667
+PORTE_OUT                        1668
+PORTE_OUTSET                     1669
+PORTE_OUTCLR                     1670
+PORTE_OUTTGL                     1671
+PORTE_IN                         1672
+PORTE_INTCTRL                    1673
+PORTE_INT0MASK                   1674
+PORTE_INT1MASK                   1675
+PORTE_INTFLAGS                   1676
+PORTE_PIN0CTRL                   1680
+PORTE_PIN1CTRL                   1681
+PORTE_PIN2CTRL                   1682
+PORTE_PIN3CTRL                   1683
+PORTE_PIN4CTRL                   1684
+PORTE_PIN5CTRL                   1685
+PORTE_PIN6CTRL                   1686
+PORTE_PIN7CTRL                   1687
+DDRF                             1696
+PORTF                            1700
+PINF                             1704
+PORTF_DIR                        1696
+PORTF_DIRSET                     1697
+PORTF_DIRCLR                     1698
+PORTF_DIRTGL                     1699
+PORTF_OUT                        1700
+PORTF_OUTSET                     1701
+PORTF_OUTCLR                     1702
+PORTF_OUTTGL                     1703
+PORTF_IN                         1704
+PORTF_INTCTRL                    1705
+PORTF_INT0MASK                   1706
+PORTF_INT1MASK                   1707
+PORTF_INTFLAGS                   1708
+PORTF_PIN0CTRL                   1712
+PORTF_PIN1CTRL                   1713
+PORTF_PIN2CTRL                   1714
+PORTF_PIN3CTRL                   1715
+PORTF_PIN4CTRL                   1716
+PORTF_PIN5CTRL                   1717
+PORTF_PIN6CTRL                   1718
+PORTF_PIN7CTRL                   1719
+DDRR                             2016
+PORTR                            2020
+PINR                             2024
+PORTR_DIR                        2016
+PORTR_DIRSET                     2017
+PORTR_DIRCLR                     2018
+PORTR_DIRTGL                     2019
+PORTR_OUT                        2020
+PORTR_OUTSET                     2021
+PORTR_OUTCLR                     2022
+PORTR_OUTTGL                     2023
+PORTR_IN                         2024
+PORTR_INTCTRL                    2025
+PORTR_INT0MASK                   2026
+PORTR_INT1MASK                   2027
+PORTR_INTFLAGS                   2028
+PORTR_PIN0CTRL                   2032
+PORTR_PIN1CTRL                   2033
+PORTR_PIN2CTRL                   2034
+PORTR_PIN3CTRL                   2035
+PORTR_PIN4CTRL                   2036
+PORTR_PIN5CTRL                   2037
+PORTR_PIN6CTRL                   2038
+PORTR_PIN7CTRL                   2039
+TCC0_CTRLA                       2048
+TCC0_CTRLB                       2049
+TCC0_CTRLC                       2050
+TCC0_CTRLD                       2051
+TCC0_CTRLE                       2052
+TCC0_INTCTRLA                    2054
+TCC0_INTCTRLB                    2055
+TCC0_CTRLFCLR                    2056
+TCC0_CTRLFSET                    2057
+TCC0_CTRLGCLR                    2058
+TCC0_CTRLGSET                    2059
+TCC0_INTFLAGS                    2060
+TCC0_TEMP                        2063
+TCC1_CTRLA                       2112
+TCC1_CTRLB                       2113
+TCC1_CTRLC                       2114
+TCC1_CTRLD                       2115
+TCC1_CTRLE                       2116
+TCC1_INTCTRLA                    2118
+TCC1_INTCTRLB                    2119
+TCC1_CTRLFCLR                    2120
+TCC1_CTRLFSET                    2121
+TCC1_CTRLGCLR                    2122
+TCC1_CTRLGSET                    2123
+TCC1_INTFLAGS                    2124
+TCC1_TEMP                        2127
+AWEXC_CTRL                       2176
+AWEXC_FDEVMASK                   2178
+AWEXC_FDCTRL                     2179
+AWEXC_STATUS                     2180
+AWEXC_DTBOTH                     2182
+AWEXC_DTBOTHBUF                  2183
+AWEXC_DTLS                       2184
+AWEXC_DTHS                       2185
+AWEXC_DTLSBUF                    2186
+AWEXC_DTHSBUF                    2187
+AWEXC_OUTOVEN                    2188
+HIRESC_CTRL                      2192
+USARTC0_DATA                     2208
+USARTC0_STATUS                   2209
+USARTC0_CTRLA                    2211
+USARTC0_CTRLB                    2212
+USARTC0_CTRLC                    2213
+USARTC0_BAUDCTRLA                2214
+USARTC0_BAUDCTRLB                2215
+UDR                              2208
+USR                              2209
+USARTC1_DATA                     2224
+USARTC1_STATUS                   2225
+USARTC1_CTRLA                    2227
+USARTC1_CTRLB                    2228
+USARTC1_CTRLC                    2229
+USARTC1_BAUDCTRLA                2230
+USARTC1_BAUDCTRLB                2231
+UDR1                             2224
+USR1                             2225
+SPIC_CTRL                        2240
+SPIC_INTCTRL                     2241
+SPIC_STATUS                      2242
+SPIC_DATA                        2243
+TCD0_CTRLA                       2304
+TCD0_CTRLB                       2305
+TCD0_CTRLC                       2306
+TCD0_CTRLD                       2307
+TCD0_CTRLE                       2308
+TCD0_INTCTRLA                    2310
+TCD0_INTCTRLB                    2311
+TCD0_CTRLFCLR                    2312
+TCD0_CTRLFSET                    2313
+TCD0_CTRLGCLR                    2314
+TCD0_CTRLGSET                    2315
+TCD0_INTFLAGS                    2316
+TCD0_TEMP                        2319
+TCD1_CTRLA                       2368
+TCD1_CTRLB                       2369
+TCD1_CTRLC                       2370
+TCD1_CTRLD                       2371
+TCD1_CTRLE                       2372
+TCD1_INTCTRLA                    2374
+TCD1_INTCTRLB                    2375
+TCD1_CTRLFCLR                    2376
+TCD1_CTRLFSET                    2377
+TCD1_CTRLGCLR                    2378
+TCD1_CTRLGSET                    2379
+TCD1_INTFLAGS                    2380
+TCD1_TEMP                        2383
+HIRESD_CTRL                      2448
+USARTD0_DATA                     2464
+USARTD0_STATUS                   2465
+USARTD0_CTRLA                    2467
+USARTD0_CTRLB                    2468
+USARTD0_CTRLC                    2469
+USARTD0_BAUDCTRLA                2470
+USARTD0_BAUDCTRLB                2471
+UDR2                             2464
+USR2                             2465
+USARTD1_DATA                     2480
+USARTD1_STATUS                   2481
+USARTD1_CTRLA                    2483
+USARTD1_CTRLB                    2484
+USARTD1_CTRLC                    2485
+USARTD1_BAUDCTRLA                2486
+USARTD1_BAUDCTRLB                2487
+UDR3                             2480
+USR3                             2481
+SPID_CTRL                        2496
+SPID_INTCTRL                     2497
+SPID_STATUS                      2498
+SPID_DATA                        2499
+TCE0_CTRLA                       2560
+TCE0_CTRLB                       2561
+TCE0_CTRLC                       2562
+TCE0_CTRLD                       2563
+TCE0_CTRLE                       2564
+TCE0_INTCTRLA                    2566
+TCE0_INTCTRLB                    2567
+TCE0_CTRLFCLR                    2568
+TCE0_CTRLFSET                    2569
+TCE0_CTRLGCLR                    2570
+TCE0_CTRLGSET                    2571
+TCE0_INTFLAGS                    2572
+TCE0_TEMP                        2575
+TCE1_CTRLA                       2624
+TCE1_CTRLB                       2625
+TCE1_CTRLC                       2626
+TCE1_CTRLD                       2627
+TCE1_CTRLE                       2628
+TCE1_INTCTRLA                    2630
+TCE1_INTCTRLB                    2631
+TCE1_CTRLFCLR                    2632
+TCE1_CTRLFSET                    2633
+TCE1_CTRLGCLR                    2634
+TCE1_CTRLGSET                    2635
+TCE1_INTFLAGS                    2636
+TCE1_TEMP                        2639
+AWEXE_CTRL                       2688
+AWEXE_FDEVMASK                   2690
+AWEXE_FDCTRL                     2691
+AWEXE_STATUS                     2692
+AWEXE_DTBOTH                     2694
+AWEXE_DTBOTHBUF                  2695
+AWEXE_DTLS                       2696
+AWEXE_DTHS                       2697
+AWEXE_DTLSBUF                    2698
+AWEXE_DTHSBUF                    2699
+AWEXE_OUTOVEN                    2700
+HIRESE_CTRL                      2704
+USARTE0_DATA                     2720
+USARTE0_STATUS                   2721
+USARTE0_CTRLA                    2723
+USARTE0_CTRLB                    2724
+USARTE0_CTRLC                    2725
+USARTE0_BAUDCTRLA                2726
+USARTE0_BAUDCTRLB                2727
+UDR4                             2720
+USR4                             2721
+USARTE1_DATA                     2736
+USARTE1_STATUS                   2737
+USARTE1_CTRLA                    2739
+USARTE1_CTRLB                    2740
+USARTE1_CTRLC                    2741
+USARTE1_BAUDCTRLA                2742
+USARTE1_BAUDCTRLB                2743
+UDR5                             2736
+USR5                             2737
+SPIE_CTRL                        2752
+SPIE_INTCTRL                     2753
+SPIE_STATUS                      2754
+SPIE_DATA                        2755
+TCF0_CTRLA                       2816
+TCF0_CTRLB                       2817
+TCF0_CTRLC                       2818
+TCF0_CTRLD                       2819
+TCF0_CTRLE                       2820
+TCF0_INTCTRLA                    2822
+TCF0_INTCTRLB                    2823
+TCF0_CTRLFCLR                    2824
+TCF0_CTRLFSET                    2825
+TCF0_CTRLGCLR                    2826
+TCF0_CTRLGSET                    2827
+TCF0_INTFLAGS                    2828
+TCF0_TEMP                        2831
+TCF1_CTRLA                       2880
+TCF1_CTRLB                       2881
+TCF1_CTRLC                       2882
+TCF1_CTRLD                       2883
+TCF1_CTRLE                       2884
+TCF1_INTCTRLA                    2886
+TCF1_INTCTRLB                    2887
+TCF1_CTRLFCLR                    2888
+TCF1_CTRLFSET                    2889
+TCF1_CTRLGCLR                    2890
+TCF1_CTRLGSET                    2891
+TCF1_INTFLAGS                    2892
+TCF1_TEMP                        2895
+HIRESF_CTRL                      2960
+USARTF0_DATA                     2976
+USARTF0_STATUS                   2977
+USARTF0_CTRLA                    2979
+USARTF0_CTRLB                    2980
+USARTF0_CTRLC                    2981
+USARTF0_BAUDCTRLA                2982
+USARTF0_BAUDCTRLB                2983
+UDR6                             2976
+USR6                             2977
+USARTF1_DATA                     2992
+USARTF1_STATUS                   2993
+USARTF1_CTRLA                    2995
+USARTF1_CTRLB                    2996
+USARTF1_CTRLC                    2997
+USARTF1_BAUDCTRLA                2998
+USARTF1_BAUDCTRLB                2999
+UDR7                             2992
+USR7                             2993
+SPIF_CTRL                        3008
+SPIF_INTCTRL                     3009
+SPIF_STATUS                      3010
+SPIF_DATA                        3011
+IRCOM_CTRL                       2296
+IRCOM_TXPLCTRL                   2297
+IRCOM_RXPLCTRL                   2298
+AES_CTRL                         192
+AES_STATUS                       193
+AES_STATE                        194
+AES_KEY                          195
+AES_INTCTRL                      196
+_ROMSIZE                         139264
+_UART_BASE                       $8A0
+_SPI_BASE                        $8C0
+SE                               0
+SMODE0                           1
+SMODE1                           2
+SMODE2                           3
+_DATE_FORMAT                     0
+_DATE_SEPARATOR                  92
+_GSTRBUF                         16000
+_DECIMALPOINT                    46
+_RTSCTS                          0
+_RTSCTS1                         0
+_RTSCTS3                         0
+_RTSCTS4                         0
+_RTSCTS5                         0
+_RTSCTS6                         0
+_RTSCTS7                         0
+_RTSCTS8                         0
+_CHIP                            208
+_RAMSIZE                         8192
+_ERAMSIZE                        2048
+_SIM                             0
+_HUGE                            0
+_BASE                            1
+_XTAL                            32000000
+_BUILD                           20781
+_COMPILER                        90
+_HWMUL                           1
+_DOSFILEWRITE                    1
+_DOSDIRWRITE                     0
+_1WEXT                           0
+_ADC_REFMODEL                    0
+_UARTS                           8
+_HWSTACKSTART                    16383
+_TIMEOUT                         0
+_PRDWORD                         0
+_PBIN_EXTENDED                   0
+_BIGSTRINGS                      0
+_FPROTECT                        0
+_HWSTACK_LOW                     &H3F7F
+_SWSTACK_LOW                     &H3F00
+_FRAME_HIGH                      &H3F01
+_XMEGA                           1
+NEUE_PLATINE                     1
+VERSION1                         "2"
+VERSION2                         "3"
+LASER_MODUL_USE                  1
+LOGBUCHNAME                      "Log_CNC.txt"
+DOUBLESTEP                       1
+ATXMEGA_SET                      1
+SDCARD_USE_LCD                   1
+AVR_DOS_IS_USED                  1
+MODUS                            0
+DISP_TYP                         0
+TRANSPARENT                      &H1000
+RED                              &HF800
+GREEN                            &H07E0
+BLUE                             &H001F
+WHITE                            &HFFFF
+BLACK                            &H0000
+YELLOW                           &HFFE0
+CYAN                             &H0410
+MAGENTA                          &H8010
+BROWN                            &HFC00
+OLIVE                            &H8400
+LIGHT_GRAY                       &H8410
+DARK_GRAY                        &H4208
+LIGHT_BLUE                       &H841F
+LIGHT_GREEN                      &H87F0
+LIGHT_CYAN                       &H87FF
+LIGHT_RED                        &HFC10
+GRAY1                            &HC618
+GRAY2                            &HA514
+GRAY3                            &H630C
+GRAY4                            &H4208
+GRAY5                            &H2104
+GRAY6                            &H3186
+BLUE0                            &H1086
+BLUE1                            &H3188
+BLUE2                            &H4314
+BLUE3                            &H861C
+CYAN0                            &H3D34
+CYAN1                            &H1DF7
+GREEN0                           &H0200
+GREEN1                           &H0208
+CMMC_SOFT                        0
+_MMC_SPI                         2240
+CPERRDRIVENOTPRESENT             &HE0
+CPERRDRIVENOTSUPPORTED           &HE1
+CPERRDRIVENOTINITIALIZED         &HE2
+CPERRDRIVECMDNOTACCEPTED         &HE6
+CPERRDRIVENODATA                 &HE7
+CPERRDRIVEINIT1                  &HE9
+CPERRDRIVEINIT2                  &HEA
+CPERRDRIVEINIT3                  &HEB
+CPERRDRIVEINIT4                  &HEC
+CPERRDRIVEINIT5                  &HED
+CPERRDRIVEINIT6                  &HEE
+CPERRDRIVEREAD1                  &HF1
+CPERRDRIVEREAD2                  &HF2
+CPERRDRIVEWRITE1                 &HF5
+CPERRDRIVEWRITE2                 &HF6
+CPERRDRIVEWRITE3                 &HF7
+CPERRDRIVEWRITE4                 &HF8
+CFILEHANDLES                     1
+CSEPFATHANDLE                    1
+CFATDIRSAVEATEND                 1
+CTEXTQUOTATIONMARKS              1
+CFATSECONDUPDATE                 1
+CVARIABLESEPARATOR               44
+C_FILESYSTEMSRAMSIZE1            594
+C_FILESYSTEMSRAMSIZE2            517
+CO_FILENUMBER                    0
+CO_FILEMODE                      1
+CO_FILEDIRENTRY                  2
+CO_FILEDIRENTRY_2                3
+CO_FILEDIRSECTORNUMBER           4
+CO_FILEFIRSTCLUSTER              8
+CO_FILESIZE                      12
+CO_FILEPOSITION                  16
+CO_FILESECTORNUMBER              20
+CO_FILEBUFFERSTATUS              24
+CO_FILEBUFFER                    25
+C_FILEHANDLESIZE                  538
+C_FILEHANDLESIZE_M                64998
+C_FILEHANDLESSIZE                 538
+C_FILESYSTEMSRAMSIZE              1649
+DFILESYSTEMSTATUSFAT             0
+DFILESYSTEMSUBDIR                1
+DMFILESYSTEMSUBDIR                2
+DMFILESYSTEMDIRINCLUSTER          3
+DFATSECONDUPDATE                 7
+DEOF                             1
+DMEOF                             2
+DEOFINSECTOR                     2
+DMEOFINSECTOR                     4
+DWRITEPENDING                    3
+DMWRITEPENDING                    8
+DFATSECTOR                       4
+DMFATSECTOR                       16
+DFILEEMPTY                       5
+DMFILEEMPTY                       32
+DFATDIRWRITEPENDING              6
+DMFATDIRWRITEPENDING              64
+DFATDIRSAVEATEND                 7
+DMFATDIRSAVEATEND                 128
+DFATDIRSAVEANYWAY                0
+DMFATDIRSAVEANYWAY                1
+DMEOFALL                          6
+DMEOF_EMPTY                       38
+CP_FATBUFFERINITSTATUS            16
+CP_DIRBUFFERINITSTATUS           0
+CP_FILEBUFFERINITSTATUS           128
+CP_FATSECONDUPDATE               0
+DREADONLY                        0
+CPFILEWRITE                      &H20
+CPNOERROR                        0
+CPENDOFFILE                      1
+CPNOMBR                          17
+CPNOPBR                          18
+CPFILESYSTEMNOTSUPPORTED         19
+CPSECTORSIZENOTSUPPORTED         20
+CPSECTORSPERCLUSTERNOTSUPPORTED  21
+CPCOUNTOFCLUSTERSNOTSUPPORTED    22
+CPNONEXTCLUSTER                  33
+CPNOFREECLUSTER                  34
+CPCLUSTERERROR                   35
+CPNOFREEDIRENTRY                 49
+CPFILEEXISTS                     50
+CPFILEDELETENOTALLOWED           51
+CPSUBDIRECTORYNOTEMPTY           52
+CPSUBDIRECTORYERROR              53
+CPNOTASUBDIRECTORY               54
+CPNOFREEFILENUMBER               65
+CPFILENOTFOUND                   66
+CPFILENUMBERNOTFOUND             67
+CPFILEOPENNOHANDLE               68
+CPFILEOPENHANDLEINUSE            69
+CPFILEOPENSHARECONFLICT          70
+CPFILEINUSE                      71
+CPFILEREADONLY                   72
+CPFILENOWILDCARDALLOWED          73
+CPFILENUMBERINVALID              74
+CPFILEPOSITIONERROR              97
+CPFILEACCESSERROR                98
+CPINVALIDFILEPOSITION            99
+CPFILESIZETOGREAT                100
+CPDRIVERERRORSTART               &HC0
+CPFILEOPENINPUT                  1
+CPFILEOPENOUTPUT                 2
+CPFILEOPENAPPEND                 8
+CPFILEOPENBINARY                 32
+CFILEWRITE_MODE                  &B00101010
+CFILEREAD_MODE                   &B00100001
+CFILESEEKSET_MODE                &B00100000
+CFILEINPUTLINE                   &B00100001
+CFILEPUT_MODE                    &B00100000
+CFILEGET_MODE                    &B00100000
+CPFILEOPENALLOWED                &B00100001
+CPFILEDELETEALLOWED              &B00100000
+CPFILESEARCHALLOWED              &B00111101
+PARAMETER_ANZAHL                 31
+_MMCSD_CMD0                       64
+_MMCSD_CMD1                       65
+_MMCSD_CMD8                       72
+_MMCSD_CMD9                       73
+_MMCSD_CMD10                      74
+_MMCSD_CMD16                      80
+_MMCSD_CMD17                      81
+_MMCSD_CMD24                      88
+_MMCSD_CMD55                      119
+_MMCSD_CMD58                      122
+_MMCSD_ACMD13                     205
+_MMCSD_ACMD41                     233
+SPI_DATA                          2243
+SPI_STATUS                        2242
+CBITINFINITY                     0
+CMBITINFINITY                    1
+CBITZERO                         1
+CMBITZERO                        2
+CBITNAN                          2
+CMBITNAN                         4
+CBITNANIFINF                     3
+CMBITNANIFINF                    8
+CBITNANIFMINUS                   4
+CMBITNANIFMINUS                  16
+CBITSIGN                         7
+CMBITSIGN                        128
+CEXPADDOFFSET                    0
+CEXPSUBOFFSET                    12
+CEXPMULOFFSET                    24
+CEXPDIVOFFSET                    36
+
+
+--------------------------------------------------------------------------------
+Warnings:
+--------------------------------------------------------------------------------
+DACA0                            not used
+DACA1                            not used
+DACB0                            not used
+DACB1                            not used
+ADCA_CALIB                       not used
+ADCA_CH0RES                      not used
+ADCA_CH1RES                      not used
+ADCA_CH2RES                      not used
+ADCA_CH3RES                      not used
+ADCA_CMP                         not used
+ADCA_CH0_RES                     not used
+ADCA_CH1_RES                     not used
+ADCA_CH2_RES                     not used
+ADCA_CH3_RES                     not used
+ADCB_CALIB                       not used
+ADCB_CH0RES                      not used
+ADCB_CH1RES                      not used
+ADCB_CH2RES                      not used
+ADCB_CH3RES                      not used
+ADCB_CMP                         not used
+ADCB_CH0_RES                     not used
+ADCB_CH1_RES                     not used
+ADCB_CH2_RES                     not used
+ADCB_CH3_RES                     not used
+TCC0_PER                         not used
+TCC0_CCA                         not used
+TCC0_CCB                         not used
+TCC0_CCC                         not used
+TCC0_CCD                         not used
+TCC0_PERBUF                      not used
+TCC0_CCABUF                      not used
+TCC0_CCBBUF                      not used
+TCC0_CCCBUF                      not used
+TCC0_CCDBUF                      not used
+TCC1_CNT                         not used
+TCC1_CCA                         not used
+TCC1_CCB                         not used
+TCC1_PERBUF                      not used
+TCC1_CCABUF                      not used
+TCC1_CCBBUF                      not used
+TCD0_CNT                         not used
+TCD0_CCA                         not used
+TCD0_CCB                         not used
+TCD0_CCC                         not used
+TCD0_CCD                         not used
+TCD0_PERBUF                      not used
+TCD0_CCABUF                      not used
+TCD0_CCBBUF                      not used
+TCD0_CCCBUF                      not used
+TCD0_CCDBUF                      not used
+TCD1_CNT                         not used
+TCD1_PER                         not used
+TCD1_CCA                         not used
+TCD1_CCB                         not used
+TCD1_PERBUF                      not used
+TCD1_CCABUF                      not used
+TCD1_CCBBUF                      not used
+TCE0_CNT                         not used
+TCE0_PER                         not used
+TCE0_CCA                         not used
+TCE0_CCB                         not used
+TCE0_CCC                         not used
+TCE0_CCD                         not used
+TCE0_PERBUF                      not used
+TCE0_CCABUF                      not used
+TCE0_CCBBUF                      not used
+TCE0_CCCBUF                      not used
+TCE0_CCDBUF                      not used
+TCE1_CNT                         not used
+TCE1_PER                         not used
+TCE1_CCA                         not used
+TCE1_CCB                         not used
+TCE1_PERBUF                      not used
+TCE1_CCABUF                      not used
+TCE1_CCBBUF                      not used
+TCF0_CNT                         not used
+TCF0_PER                         not used
+TCF0_CCA                         not used
+TCF0_CCB                         not used
+TCF0_CCC                         not used
+TCF0_CCD                         not used
+TCF0_PERBUF                      not used
+TCF0_CCABUF                      not used
+TCF0_CCBBUF                      not used
+TCF0_CCCBUF                      not used
+TCF0_CCDBUF                      not used
+TCF1_CNT                         not used
+TCF1_PER                         not used
+TCF1_CCA                         not used
+TCF1_CCB                         not used
+TCF1_PERBUF                      not used
+TCF1_CCABUF                      not used
+TCF1_CCBBUF                      not used
+SP                               not used
+RTC_CNT                          not used
+RTC_PER                          not used
+RTC_COMP                         not used
+EBI_REFRESH                      not used
+EBI_INITDLY                      not used
+EBI_CS0_BASEADDR                 not used
+EBI_CS1_BASEADDR                 not used
+EBI_CS2_BASEADDR                 not used
+EBI_CS3_BASEADDR                 not used
+DMA_CH0_TRFCNT                   not used
+DMA_CH1_TRFCNT                   not used
+DMA_CH2_TRFCNT                   not used
+DMA_CH3_TRFCNT                   not used
+DMA_CH0_SRCADDR                  not used
+DMA_CH0_DESTADDR                 not used
+DMA_CH1_SRCADDR                  not used
+DMA_CH1_DESTADDR                 not used
+DMA_CH2_SRCADDR                  not used
+DMA_CH2_DESTADDR                 not used
+DMA_CH3_SRCADDR                  not used
+DMA_CH3_DESTADDR                 not used
+R0                               not used
+R1                               not used
+R2                               not used
+R3                               not used
+R4                               not used
+R5                               not used
+R6                               not used
+R7                               not used
+R8                               not used
+R9                               not used
+R10                              not used
+R11                              not used
+R12                              not used
+R13                              not used
+R14                              not used
+R15                              not used
+R16                              not used
+R17                              not used
+R18                              not used
+R19                              not used
+R20                              not used
+R21                              not used
+R22                              not used
+R23                              not used
+R24                              not used
+R25                              not used
+R26                              not used
+R27                              not used
+R28                              not used
+R29                              not used
+R30                              not used
+R31                              not used
+POSITION_X                       not used
+POSITION_Y                       not used
+MASCH_POS_X_MM                   not used
+MASCH_POS_Y_MM                   not used
+ERR_CODE1                        not used
+X_SINGLE                         not used
+Y_SINGLE                         not used
+Z_SINGLE                         not used
+BITKEY_ENC                       not used
+POINTER                          not used
+FREE_SINGLE                      not used
+GLDRIVESECTORS                   not used
+GLDIR0SECTORNUMBER               not used
+GBFATBUFFER                      not used
+LASTDOSMEM                       not used
+
+Source string could be too big to fit into target string [___TEMP1>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP2>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP3>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___STRBUF]  in line  0 
+Source string could be too big to fit into target string [___TEMP4>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___STRBUF]  in line  0 
+Source string could be too big to fit into target string [___TEMP5>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP6>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP7>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [NC_PROGRAMM>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP8>HELP_STR2]  in line  0 
+Source string could be too big to fit into target string [HELP_STR2>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR2>___XL]  in line  0 
+Source string could be too big to fit into target string [___TEMP9>HELP_STR]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 
+Source string could be too big to fit into target string [HELP_STR>___XL]  in line  0 

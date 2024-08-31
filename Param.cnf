@@ -1,0 +1,115 @@
+'Maximaler <Dateiname fuer NC Dateien 1234567.plt
+'WIchtig !!! NUR ENDUNG .PLT  !!!!!
+'*** COnfigurationsfile CNC Steuerung V2.1 ***
+'
+'**** Achsparameter *****
+' X Achse
+'X-Aufloesung steps / plt * 10
+PTT01=40=
+'X-Aufloesung steps / mm * 10
+PTT02=160=
+
+'Material Beladeposition X 0 = keine      
+angabe in steps!!
+PTT28=-1300=
+
+' Y Achse
+'Y-Aufloesung steps / plt * 10
+PTT03=40=
+'Y-Aufloesung steps / mm * 10
+PTT04=160=
+'Material Beladeposition Y 0 = keine 
+angabe in steps!!
+PTT29=0=
+
+
+
+'**** Sonstige Parameter ******
+'PA0,0 Leerfahrt ignorieren
+PTT05=1=
+
+'Beim Programmende die motoren abschalten
+' NUR Bei vollständigen prg,Nicht bei Abbruch
+PTT08=1=
+
+'Nicht Koordinatennullpunkt Sondern Teilnullpunkt verwenden
+PTT26=1=
+
+'**** Verfahrtechnik *********
+'Steps X manuell pro Tick
+PTT06=50=
+'Steps Y manuell pro Tick
+PTT07=50=
+
+ 
+
+'***** Refereznfahrt *********
+'Richtung Refeerenzfahrt X
+PTT09=0=
+'Richtung Refeerenzfahrt Y
+PTT10=1=
+
+'Geschwindigkeiten (Speed in us/Tic)
+'speed Richtung Refeerenzfahrt X
+PTT11=500=
+'speed Richtung Refeerenzfahrt Y
+PTT12=500=
+'Speed_ref_frei_fahrt_X
+PTT16=200=
+'Speed_ref_frei_fahrt_Y
+PTT17=200=
+
+'Weg von Freifahrt
+'Freifahren Weg Refeerenzfahrt X
+PTT13=22770=
+'Freifahren Weg Refeerenzfahrt Y
+PTT14=1218=
+
+'Invertierung Schaltsignal X Achse
+PTT18=1=
+'Invertierung Schaltsignal Y Achse
+PTT19=1=
+
+
+'****** Verfahrgeschwindigkeiten / Laser******
+'Arbeitsgeschwindigkeit
+getestet 65400, das doppelte noch möglich
+PTT15=65300=
+
+'Laser Einbrennzeit in millisec
+'bei SP999;
+PTT20=300=
+
+'Laser Startzeit in millisec
+PTT30=00=
+
+'Laser stopzeit in millisec
+PTT31=00=
+
+
+
+'Laser Modul verbaut?
+PTT25=0=
+
+'***** Zeit Berechnung **********
+'Gemessene Arbeitsgeschwindigkeit mm pro Minute
+PTT21=799=
+
+
+'***** Einricht Option **********
+'Einricht Option Aktiv?
+PTT22=1=
+'Masse in mm *40 angeben!!! (PLT einheit)
+'Versatz X Achse (auch minus) 
+PTT23=0=
+'Versatz Y Achse (auch minus) 
+PTT24=960=
+
+'Bei Programmsimulation auch den Versatz verwenden
+PTT27=1=
+
+
+
+
+
+'Letzte Zahl = 31
