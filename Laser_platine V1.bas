@@ -1,5 +1,5 @@
 '*******************************************************************************
-'*******************************************************************************
+'******************************************************************************
 '                     CNC Platinen Laser
 'CPU ATXmega 128a3
 'SD-Karte FAT16/32
@@ -18,7 +18,7 @@ Const Version1 = "2"
 Const Version2 = "3"
 
 Const Laser_modul_use = 1
-'Befehle (alles Binär)
+'Befehle (alles BinÃ¤r)
 '0-100 = %
 '101 Start NC io
 '102 Programmstart / Normal
@@ -203,7 +203,7 @@ Dim Free_single As Single
 Dim Rec_c0 As Byte
 Dim Abbruch As Bit
 Dim Laser_out As Byte
-'=====[ Variablen Für Zustände  ]===============================================
+'=====[ Variablen FÃ¼r ZustÃ¤nde  ]===============================================
 Dim Z_referenz As Bit : Z_referenz = 0
 Dim Z_sd_karte As Bit : Z_sd_karte = 0
 
@@ -276,18 +276,18 @@ Call Lcd_text( "OK" , 100 , 24 , 3 , Green , Transparent)
 '------------------------------------------------------------------------------
 
 '=====[ Timer Konfiguration ]==================================================
-'Timer C1 Für Sekundentakt
+'Timer C1 FÃ¼r Sekundentakt
 Config Tcc1 = Normal , Prescale = 1024
 Tcc1_per = 31250                                            '32MHz/1024 = 31250
 On Tcc1_ovf Timer_sekunde
 Enable Tcc1_ovf , Lo
 
-'Timer C0 für Motorentakt
+'Timer C0 fÃ¼r Motorentakt
 Config Tcc0 = Normal , Prescale = 64
 On Tcc0_ovf Timer_mot
 Enable Tcc0_ovf , Hi
 
-'Timer D0 Für Encoder
+'Timer D0 FÃ¼r Encoder
 Config Tcd0 = Normal , Prescale = 64
 Tcd0_per = 3000                                             '32MHz/1024 = 31250
 On Tcd0_ovf Encode_isr
@@ -347,7 +347,7 @@ Else
    Loop
 End If
 '------------------------------------------------------------------------------
-'SD Kartengröße Anzeigen
+'SD KartengrÃ¶ÃŸe Anzeigen
 L = Diskfree() : L = L / 1024 : Sd_free_mb = L
 L = Disksize() : L = L / 1024 : Sd_size_mb = L
 Print#5 , "SD I.O"
@@ -391,7 +391,7 @@ File_names = Dir()
 Dateiname(gefundene_dateien) = File_names                   ' get next
 Wend
 Decr Gefundene_dateien
-'Erstes Programm anwählen
+'Erstes Programm anwÃ¤hlen
 Nc_programm = Dateiname(1)
 Help_str = Str(gefundene_dateien)
 Help_str = Help_str + " Dateien vorhanden"
@@ -520,7 +520,7 @@ Do
 Lineinput #file_handle , Help_str                           '
 Header = Left(help_str , 2)
 
-'Nullfahrt erkennen, ggf überspringen
+'Nullfahrt erkennen, ggf Ã¼berspringen
 Splitt(1) = Left(help_str , 6)
 If Splitt(1) = "PA0,0;" Then Goto Null_f_erk
 
@@ -541,7 +541,7 @@ B = Split(help_str , Splitt(1) , ";")
 
 Y_prog_pos = Val(splitt(1))
 
-'Maximalmaße erkennen
+'MaximalmaÃŸe erkennen
 If X_prog_pos < Min_x_prg Then Min_x_prg = X_prog_pos
 If X_prog_pos > Max_x_prg Then Max_x_prg = X_prog_pos
 If Y_prog_pos < Min_y_prg Then Min_y_prg = Y_prog_pos
@@ -729,7 +729,7 @@ Y_prog_pos = Val(splitt(1))
 Header_pen = ""
 Header_pen = Left(splitt(2) , 2)
 
-'Falls gewünscht teileversatz (Teil auf null legen) errechen
+'Falls gewÃ¼nscht teileversatz (Teil auf null legen) errechen
 If Teil_einnullen = 1 Then
 X_prog_pos = X_prog_pos - Min_x_prg
 Y_prog_pos = Y_prog_pos - Min_y_prg
@@ -750,7 +750,7 @@ New_pos_x_step = New_pos_x_step / 10
 
 New_pos_y_step = Y_prog_pos * Steps_plt_y
 New_pos_y_step = New_pos_y_step / 10
-'Steps an Timer übertragen
+'Steps an Timer Ã¼bertragen
 Laser_out = Fortschritt
 If Laser_out < 101 Then Usartc0_data = Laser_out
 
